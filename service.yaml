@@ -3,11 +3,10 @@ kind: Service
 metadata:
   name: podinfo-service
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     app: podinfo
   ports:
   - protocol: TCP
-    nodePort: 30300
     port: 4444
     targetPort: 4444
