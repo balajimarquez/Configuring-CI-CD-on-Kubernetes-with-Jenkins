@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: podinfo
-        image: test-image:{{BUILD_NUMBER}}
+        image: test-image:tag
         imagePullPolicy: Always
         ports:
         - containerPort: 4444
