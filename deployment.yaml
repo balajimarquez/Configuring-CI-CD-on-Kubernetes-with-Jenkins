@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: podinfo
-        image: test-image:tag
+        image: test-image:${{ github.sha }}
         imagePullPolicy: Always
         ports:
         - containerPort: 4444
