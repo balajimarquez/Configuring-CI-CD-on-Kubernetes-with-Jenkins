@@ -12,7 +12,6 @@ env:
     CONTAINER_NAME: test-image
     DEPLOYMENT_MANIFEST_PATH: |
         ./deployment.yaml
-        ./service.yaml
 jobs:
     buildImage:
         permissions:
