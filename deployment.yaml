@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: podinfo
-        image: ${{ env.AZURE_CONTAINER_REGISTRY }}.azurecr.io/${{ env.CONTAINER_NAME }}:${{ github.sha }}
+        image: klentytestacr.azurecr.io/test-image:{{BUILD_NUMBER}}
         imagePullPolicy: Always
         ports:
         - containerPort: 4444
